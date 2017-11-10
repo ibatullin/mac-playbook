@@ -1,0 +1,5 @@
+---
+- name: Install everything
+  hosts: localhost
+  connection: local
+  strategy: debug
