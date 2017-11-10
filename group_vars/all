@@ -4,3 +4,7 @@ home_directory: "/Users/{{ user }}"
 downloads_directory: "{{ home_directory }}/.ansible/downloads"
 dot_tools_directory: "{{ home_directory }}/.dot-tools"
 
+brew_packages:
+ - gpg
+ - node
+
