@@ -10,3 +10,7 @@
   - role: homebrew
   - role: dotfiles
 
+  - role: software
+    tags:
+      - software
+
