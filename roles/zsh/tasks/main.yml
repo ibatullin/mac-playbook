@@ -1,0 +1,5 @@
+---
+- name: Make zsh the default shell
+  shell: chsh -s $(which zsh)
+  changed_when: false
+
