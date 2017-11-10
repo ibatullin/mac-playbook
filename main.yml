@@ -3,3 +3,6 @@
   hosts: localhost
   connection: local
   strategy: debug
+  roles:
+  - role: ansible-download-directory
+
