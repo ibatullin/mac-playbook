@@ -1,0 +1,4 @@
+- name: Install dotfiles
+  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ibatullin/dot-files/master/.dot-tools/install)"
+  changed_when: false
+
