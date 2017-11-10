@@ -6,3 +6,5 @@
   roles:
   - role: ansible-download-directory
 
+  - role: homebrew
+
