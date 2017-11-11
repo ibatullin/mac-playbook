@@ -16,4 +16,8 @@
 
   - role: iterm
   - role: docker
+  - role: rvm
+    tags:
+      - rvm
+      - ruby
 

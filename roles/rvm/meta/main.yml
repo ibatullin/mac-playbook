@@ -1,0 +1,5 @@
+---
+dependencies:
+  - { name: rvm_io.ruby, rvm1_rubies: ['ruby-2.4.0'], rvm1_user: "{{ user }}" }
+
+
