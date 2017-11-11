@@ -21,3 +21,7 @@ brew_packages:
  - gpg
  - node
 
+gems:
+ - bundler
+ - jekyll
+
