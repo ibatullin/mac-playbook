@@ -1,0 +1,17 @@
+---
+- name: Install Dockutil
+  homebrew:
+    name: dockutil
+
+- name: Remove all apps from the Dock
+  shell: dockutil --remove all --no-restart
+  changed_when: false
+
+- name: Add apps to the Dock
+  command: "dockutil --add '/Applications/{{ item }}.app' --no-restart"
+  changed_when: false
+  with_items: "{{ dock_apps }}"
+
+- name: Restart the dock
+  command: killall Dock
+  changed_when: false

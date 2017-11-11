@@ -25,3 +25,5 @@
       - ruby
       - gems
 
+  - role: dock
+
