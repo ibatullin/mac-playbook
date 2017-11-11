@@ -1,0 +1,28 @@
+- name: Install iTerm2
+  homebrew_cask:
+    name: iterm2
+
+- name: Download shell integration
+  get_url:
+    url: https://iterm2.com/shell_integration/zsh
+    dest: "{{ dot_tools_directory }}/iterm2_shell_integration.zsh"
+    mode: u+x
+
+- name:  Set custom preferences folder.
+  osx_defaults:
+    domain: com.googlecode.iterm2
+    key: PrefsCustomFolder
+    type: string
+    value: "{{ iterm2_preferences_directory }}"
+  when: iterm2_preference_directory is defined
+  tags:
+    - iterm2
+
+- name: Enable custom preferences folder.
+  osx_defaults:
+    domain: com.googlecode.iterm2
+    key: LoadPrefsFromCustomFolder
+    type: bool
+    value: true
+  when: iterm2_preference_directory is defined
+  tags: ['iterm2']

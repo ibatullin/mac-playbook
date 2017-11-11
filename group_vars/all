@@ -3,6 +3,9 @@ user: "{{ ansible_user_id }}"
 home_directory: "/Users/{{ user }}"
 downloads_directory: "{{ home_directory }}/.ansible/downloads"
 dot_tools_directory: "{{ home_directory }}/.dot-tools"
+dot_configs_directory: "{{ home_directory }}/.dot-configs"
+
+iterm2_preferences_directory: "{{ dot_configs_directory }}/iterm2 }}"
 
 
 brew_casks:
