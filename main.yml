@@ -15,4 +15,5 @@
       - software
 
   - role: iterm
+  - role: docker
 
