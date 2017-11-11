@@ -20,4 +20,8 @@
     tags:
       - rvm
       - ruby
+  - role: gems
+    tags:
+      - ruby
+      - gems
 
