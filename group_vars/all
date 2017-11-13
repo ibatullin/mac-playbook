@@ -25,3 +25,6 @@ gems:
  - bundler
  - jekyll
 
+npm_packages:
+ - pug-cli
+ - pug

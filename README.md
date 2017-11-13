@@ -46,6 +46,7 @@ Or run all in one command
 - Bundler
 - Jekyll
 - Node.js
+- pug
 - gpg
 
 ### Configuration
