@@ -24,6 +24,9 @@
     tags:
       - ruby
       - gems
+  - role: npm
+    tags:
+      - npm
 
   - role: dock
 
