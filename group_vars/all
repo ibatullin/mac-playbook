@@ -21,6 +21,7 @@ brew_packages:
  - gpg
  - node
  - go
+ - tree
 
 gems:
  - bundler

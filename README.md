@@ -49,6 +49,7 @@ Or run all in one command
 - golang
 - pug
 - gpg
+- tree
 
 ### Configuration
 
