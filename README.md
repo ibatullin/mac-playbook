@@ -56,4 +56,5 @@ Or run all in one command
 - Make zsh as default shell
 - [dot-files](https://github.com/ibatullin/dot-files) (includes oh-my-zsh)
 - Organize the Dock
+- Chrome as default browser
 

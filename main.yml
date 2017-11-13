@@ -29,4 +29,7 @@
       - npm
 
   - role: dock
+  - role: defaultbrowser
+    tags:
+      - browser
 

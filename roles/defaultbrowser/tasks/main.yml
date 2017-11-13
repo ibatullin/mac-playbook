@@ -1,0 +1,31 @@
+---
+- name: Check if defaultbrowser command exists
+  stat:
+    path: /usr/local/bin/defaultbrowser
+  register: defaultbrowser_exists
+
+- name: Download defaultbrowser script
+  git:
+    repo: https://github.com/kerma/defaultbrowser
+    dest: "{{ downloads_directory }}/defaultbrowser"
+  when: defaultbrowser_exists.stat.islnk is not defined
+
+- name: Symlink defaultbrowser script to usr/bin
+  become: true
+  file:
+    src: "{{ downloads_directory }}/defaultbrowser/build/defaultbrowser"
+    dest: /usr/local/bin/defaultbrowser
+    state: link
+  when: defaultbrowser_exists.stat.islnk is not defined
+
+- name: Chrome - get default browser
+  shell: defaultbrowser | sed 's/Current:\ //' | head -1
+  register: defaultbrowser_value
+  changed_when: False
+
+- name: Chrome - set as default browser
+  command: defaultbrowser -set chrome
+  when: defaultbrowser_value.stdout != "chrome"
+
+# By https://github.com/ultimateboy/ansible.osx/
+
