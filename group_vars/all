@@ -20,6 +20,7 @@ brew_casks:
 brew_packages:
  - gpg
  - node
+ - go
 
 gems:
  - bundler
