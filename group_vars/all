@@ -16,6 +16,7 @@ brew_casks:
   - slack
   - telegram
   - karabiner-elements
+  - steam
 
 brew_packages:
  - gpg
