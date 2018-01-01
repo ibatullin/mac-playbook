@@ -36,3 +36,4 @@ npm_packages:
  - pug-cli
  - pug
  - vue-cli
+ - gulp
