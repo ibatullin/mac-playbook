@@ -30,6 +30,7 @@ brew_packages:
 gems:
  - bundler
  - jekyll
+ - rails
 
 npm_packages:
  - pug-cli
