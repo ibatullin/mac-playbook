@@ -25,6 +25,7 @@ brew_packages:
  - go
  - tree
  - pyenv
+ - postgresql
 
 gems:
  - bundler
