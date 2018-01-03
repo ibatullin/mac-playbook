@@ -20,6 +20,7 @@ brew_casks:
   - github
   - sketch
   - gimp
+  - dash
 
 brew_packages:
  - gpg
