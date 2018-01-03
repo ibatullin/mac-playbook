@@ -18,6 +18,8 @@ brew_casks:
   - karabiner-elements
   - steam
   - github
+  - sketch
+  - gimp
 
 brew_packages:
  - gpg
